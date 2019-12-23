@@ -81,7 +81,7 @@
                                 <div>
                                     <label for="psw">Password</label>
                                     <input type="password" placeholder="choose a password..." name="password" required #password="ngModel"
-                                        pattern="^(?=.*[!@#$%^&*?/-]).{7,16}$" [(ngModel)]="dataservice.login_password"
+                                         [(ngModel)]="dataservice.login_password"
                                         class="form-control" minlength="3">
                                     <div *ngIf="password.invalid && (password.dirty || password.touched)" class="alert alert-danger"
                                         style="border: none; background: none; padding: none; color: #851111; margin-top: -1.9em; margin-bottom: -7px; font-size: 14px;">
